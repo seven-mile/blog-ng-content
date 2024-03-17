@@ -1,5 +1,5 @@
-#let heiti = ("Times New Roman", "Source Han Sans SC", "Source Han Sans TC", "New Computer Modern", "New Computer Modern Math")
-#let songti = ("Times New Roman", "Source Han Serif SC", "Source Han Serif TC", "New Computer Modern", "New Computer Modern Math")
+#let heiti = ("Times New Roman", "Source Han Sans SC", "Source Han Sans TC", "Noto Sans CJK SC", "Noto Sans CJK TC", "New Computer Modern", "New Computer Modern Math")
+#let songti = ("Source Han Serif SC", "Source Han Serif TC", "Noto Serif CJK SC", "Noto Serif CJK TC", "New Computer Modern", "New Computer Modern Math")
 #let zhongsong = ("Times New Roman","STZhongsong", "SimSun", "New Computer Modern")
 
 #import "@preview/typst-ts-variables:0.1.0": page-width, target
