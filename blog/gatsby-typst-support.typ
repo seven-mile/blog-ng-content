@@ -9,8 +9,6 @@
   second: 0,
 ), description: "A small gift for you")
 
-This is a Typst port of LaTeX Math for Undergrads
-
 过去的 Hexo 博客差不多有 3 年没有监修，受到 #link("https://github.com/memset0/gatsby-blog")[`memset0/gatsby-blog`] 的启发，我用 Gatsby.js 重新构建了这套生成器。
 
 为了一切的一切，我加上了 Typst 的支持。这套年轻的排版引擎可以胜任我的所有编辑需求，透过 #link("https://github.com/Myriad-Dreamin/typst.ts")[`typst.ts`] 我可以仅书写少量代码就将 Typst 的复杂渲染结果交互式地呈现到 Web 页面上。
