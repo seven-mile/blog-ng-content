@@ -2,7 +2,7 @@
 #let songti = ("Source Han Serif SC", "Source Han Serif TC", "Noto Serif CJK SC", "Noto Serif CJK TC", "New Computer Modern", "New Computer Modern Math")
 #let zhongsong = ("Times New Roman","STZhongsong", "SimSun", "New Computer Modern")
 
-#import "@preview/typst-ts-variables:0.1.0": page-width, target
+#import "@preview/shiroa:0.1.0": page-width, target
 
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
