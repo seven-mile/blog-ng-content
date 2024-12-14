@@ -8,11 +8,11 @@ During the last year of my undergraduate studies, I found myself with some extra
 
 This experience marked my first deep dive into the workings of an open-source community. The ClangIR community, a smaller sub-community within the larger LLVM family, provided a welcoming environment. We have monthly meetings that are relatively informal, making it easier for everyone to communicate and collaborate.
 
-# Background
+## Background
 
 [The ClangIR project](https://github.com/llvm/clangir) aims to establish a new IR for Clang, built on top of MLIR. As part of the ongoing effort to support heterogeneous programming models, this project focuses on integrating OpenCL C language support into ClangIR. The ultimate goal is to enable the compilation of GPU kernels written in OpenCL C into LLVM IR targeting the SPIR-V architecture, laying the groundwork for future enhancements in SYCL and CUDA support.
 
-# What We Did
+## What We Did
 
 Our work involved several key areas:
 
@@ -30,13 +30,13 @@ Our work involved several key areas:
 
 7. **User Experience Enhancements**: Finally, we ensured that the end-to-end kernel compilation experience using ClangIR was smooth and intuitive, with minimal manual intervention required.
 
-# Results
+## Results
 
 The project successfully met its primary goals. OpenCL kernels from the Polybench-GPU benchmark suite can now be compiled using ClangIR into LLVM IR for SPIR-V. All patches have been merged into the main ClangIR repository, and the project’s progress has been well-documented in the [overview issue](https://github.com/llvm/clangir/issues/689). I believe the work not only advanced OpenCL support but also laid a solid foundation for future enhancements, such as SYCL and CUDA support in ClangIR.
 
 We have successfully compiled and passed all 20 OpenCL C test cases from the [polybenchGpu](https://github.com/sgrauerg/polybenchGpu) repository. Please refer to our [artifact evaluation repository](https://github.com/seven-mile/clangir-ocl-ae) for detailed instructions on how to experiment with our work.
 
-# Future Works
+## Future Works
 
 As we look forward, there are two key areas that require further development:
 
@@ -44,11 +44,11 @@ As we look forward, there are two key areas that require further development:
 
 2. **Support for OpenCL Built-in Types**: Another critical area for future work is the support for OpenCL built-in types, such as `pipe` and `image`. These types are essential for handling data streams and image processing tasks in various specialized OpenCL applications. Supporting these types will significantly enhance ClangIR's adherence to the OpenCL standard, broadening its applicability and ensuring better compatibility with a wide range of OpenCL programs.
 
-# Acknowledgements
+## Acknowledgements
 
 This project would not have been possible without the guidance and support of the LLVM community. I extend my deepest gratitude to my mentors, Julian Oppermann, Victor Lomüller, and Bruno Cardoso Lopes, whose expertise and encouragement were instrumental throughout this journey. Additionally, I would like to thank Vinicius Couto Espindola for his collaboration on ABI-related work. This experience has been immensely rewarding, both technically and in terms of community engagement.
 
-# Appendix
+## Appendix
 
 * [Overview issue of OpenCL C support](https://github.com/llvm/clangir/issues/689)
 * [Artifact Evaluation Instructions](https://github.com/seven-mile/clangir-ocl-ae)
