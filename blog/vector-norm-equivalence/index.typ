@@ -23,7 +23,7 @@
 
 图中证明取出子集 $S$ 后，立刻得到了它是一个*闭区域*. 这是没问题的，因为我们已经选定了 $norm(dot.c)_2$，因此其闭性质只是一个经典几何问题. 但是证明紧接着指出了任意向量范数对应的函数 $f:bb(V)^n -> bb(R)$ 是连续函数，这一点必须要加以证明才行.
 
-这里有一个容易混淆的地方：连续性基于极限，而极限依赖一个度量. 范数当然是一个度量，于是我们可能会惯性地使用 $norm(dot.c)_alpha$ 来定义连续性. 但那样就不是我们一般已经证明过的具有良好性质的函数连续性了. 考虑到我们后续需要使用「*闭区域上的连续函数有界*」这个性质，我们最好使用 $norm(dot.c)_2$ 作为度量证明连续性，则二级结论不需要另外加以证明了.
+这里有一个容易混淆的地方：连续性基于极限，而极限依赖一个度量. 范数当然是一个度量，于是我们可能会惯性地使用 $norm(dot.c)_alpha$ 来定义连续性. 但那样就不是我们一般已经证明过的具有良好性质的函数连续性了. 考虑到我们后续需要使用引理「*闭区域上的连续函数有界*」，我们最好以 $norm(dot.c)_2$ 为度量证明连续性，则引理不需要另外加以证明了.
 
 证：
 
@@ -86,10 +86,10 @@ $
 
 任取一点 $x in X$，考虑 $x$ 的任意去心邻域 $dot(U)(x, delta)$. 我们首先可以找到一个点集 $Y={(1+ epsilon) x mid(|) epsilon>0}$，它满足：
 
-1. $Y$ 中所有点在目标集 $X$ 之外
-	考虑 $forall\,y in Y$，$norm(y)_beta=norm((1+ epsilon)x)_beta=(1+ epsilon)norm(x)_beta>norm(x)_beta=1$ ，得证.
-2. $Y$ 和所选定去心邻域 $dot(U)(x, delta)$ 有非空交集
-	考虑两个集合的交，也即$X_0:=Y sect dot(U)(x, delta)={y mid(|) y in Y and norm(x-y)_2= epsilon norm(x)_2< delta}={ epsilon x mid(|) 0< epsilon< delta/norm(x)_2}$ 显然非空.
+1. $Y$ 中所有点在目标集 $X$ 之外 \
+	考虑 $forall y in Y$，$norm(y)_beta=norm((1+ epsilon)x)_beta=(1+ epsilon)norm(x)_beta>norm(x)_beta=1$ ，得证.
+2. $Y$ 和所选定去心邻域 $dot(U)(x, delta)$ 有非空交集 \
+	考虑两个集合的交，也即$X_0:=Y sect dot(U)(x, delta)={y mid(|) y in Y and norm(x-y)_2= epsilon norm(x)_2< delta}={ (1+epsilon) x mid(|) 0< epsilon< delta/norm(x)_2}$ 显然非空.
 
 交集 $X_0$ 非空意味着我们找到了任意去心邻域中在 $X$ 之外的点，因此 $x$ 是边界点. 所以 $X$ 中所有点都属于其边界. 那么显然 $X$ 是闭区域.
 
